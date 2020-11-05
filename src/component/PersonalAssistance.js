@@ -41,7 +41,7 @@ const PersonalAssistance = () => {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 5 }}>
-                <View style={{ flex: 1.5, backgroundColor: Colors.secondary }}>
+                <View style={{ flex: 1.5, backgroundColor: Colors.secondary,borderBottomEndRadius:25,borderBottomStartRadius:25 }}>
                     <View style={styles.headerView}>
                         <View style={[styles.headingView,]}>
                             <Text style={styles.headingText}>Personal Assistance</Text>
@@ -60,7 +60,7 @@ const PersonalAssistance = () => {
                                         <TouchableOpacity
                                         // onPress={()>al}
                                         style={styles.toggleBtnView}>
-                                                <Text style={{ color: '#fff', fontSize: 13 }}>Toggle Setting</Text>
+                                                <Text style={{ color: '#fff', fontSize: 13,fontWeight:"bold" }}>Toggle Setting</Text>
                                         </TouchableOpacity>
                                     </View>
                                 </View>
@@ -126,7 +126,7 @@ const PersonalAssistance = () => {
                                     return (
 
                                         <View style={styles.callDetailsCard}>
-                                            <View style={styles.callDetailsCard2}>
+                                            <View style={styles.callDetailsCard2} >
                                                 <View style={styles.nameAndTimeView}>
                                                     <View style={styles.nameView}>
                                                         <View style={styles.profileIcon}>
@@ -192,23 +192,33 @@ const styles = StyleSheet.create({
     headingView: { flex: 1, alignItems: 'center',  },
     headingText: { color: '#fff', fontSize: 18,marginTop:"8%" },
     toggleView: { flex: 0.5, alignItems: 'center', justifyContent: 'center' },
-    toggleCard: { flexDirection: 'row', overflow: 'hidden', borderRadius: 20, shadowColor: 'black', elevation: 5, padding: 20, height: 145, width: '90%', backgroundColor: '#fff', marginTop: 30 },
+    toggleCard: { flexDirection: 'row', overflow: 'hidden', borderRadius: 20, elevation: 1, padding: 20, height: 145, width: '90%', backgroundColor: '#fff', marginTop: 30 },
     toggleText: { fontWeight: 'bold', color: '#6a5acd', fontSize: 18, fontFamily: 'arial' },
-    toggleBtnView: { borderRadius: 10, width: '65%', height: 40, backgroundColor: Colors.reverse, alignItems: 'center', justifyContent: 'center' },
+    toggleBtnView: { borderRadius: 10, width: '60%', height: 40, backgroundColor: Colors.reverse, alignItems: 'center', justifyContent: 'center' },
     image: { height: 145, width: 128, marginTop: -20, },
     calendarView: { flex: 1, justifyContent: 'flex-end', marginTop: 5 },
     monthArrowView: { flexDirection: 'row', paddingHorizontal: 28, marginBottom: -15 },
     backIcon: { height: 35, width: 35, alignItems: 'center', justifyContent: 'center', borderRadius: 17.5, borderWidth: 1, borderColor: 'lightgrey' },
     nextIcon: { height: 35, position:'relative', width: 35, alignItems: 'center', justifyContent: 'center', borderRadius: 17.5, borderWidth: 1, borderColor: 'lightgrey' },
     callDetailsView: { flex: 2.3, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fffafa' },
-    loggedCallText: { borderRadius: 25, borderColor: 'lightgrey', color: 'grey', fontWeight: '600', borderWidth: 1, width: 130, textAlign: 'center', padding: 10 },
-    callDetailsCard: { width: '100%', alignItems: 'center', flex: 2, paddingVertical: 5 },
-    callDetailsCard2: { padding: 15, borderRadius: 10, width: '90%', shadowColor: '#e0ffff', elevation: 4, },
+    loggedCallText: { borderRadius: 25,fontSize:12, borderColor: 'lightgrey', color: 'grey', fontWeight: '600', borderWidth: 1, width: 130, textAlign: 'center', padding: 8 },
+    callDetailsCard: { width: '100%', alignItems: 'center', flex: 2, 
+
+
+
+
+
+},
+    callDetailsCard2: { padding: 15, borderRadius: 10, width: '90%',
+
+   
+
+},
     nameAndTimeView: { flex: 1, flexDirection: 'row', justifyContent: 'center', marginBottom: 2 },
     nameView: { flex: 1.3, flexDirection: 'row', alignItems: 'center' },
     profileIcon: { height: 27, width: 27, alignItems: 'center', justifyContent: 'center', borderRadius: 15, borderWidth: 1, borderColor: 'lightgrey' },
     userName: { fontWeight: 'bold', alignItems: 'center', marginLeft: 10 },
-    timeIcon: { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: Colors.secondary },
+    timeIcon: { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: Colors.secondary, },
     callIconView: { height: 27, marginLeft: 5, width: 27, alignItems: 'center', justifyContent: 'center', borderRadius: 15, backgroundColor: '#40e0d0' },
     detailsBtnView : { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: '#6a5acd' },
     detailsBtnText :{ fontSize: 12, color: '#fff', fontSize: 11 },
