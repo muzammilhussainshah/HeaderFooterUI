@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text, TouchableOpacity } from 'react-native';
+import Colors from '../common/colors';
 
 export default CustomButton = ({ label, _login }) => {
     return (
         <TouchableOpacity onPress={() => _login()}
             style={{
-                backgroundColor: "#00D9B6",
+                backgroundColor: Colors.reverse,
                 width: "90%", justifyContent: "center",
                 height: 55, borderRadius: 15
             }}>

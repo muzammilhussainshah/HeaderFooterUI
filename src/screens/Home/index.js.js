@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Dimensions, View, Text, Image, TouchableOpacity, FlatList } from 'react-native';
 import { connect } from 'react-redux';
+import TextInANest from '../../component/PersonalAssistance'
 import CustomFooter from '../../component/CustomFooter/index';
 const screenHeight = Dimensions.get('window').height;
 const screenWidth = Dimensions.get('window').screenWidth;
@@ -12,7 +13,12 @@ const Home = ({ }) => {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 8.7, backgroundColor: "red" }}>
-                <Text style={{ fontWeight: "bold", fontSize: 25 }}>{`Login with Phone`}</Text>
+
+
+            <TextInANest />
+            
+            
+            
             </View>
 
 

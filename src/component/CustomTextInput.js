@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, TextInput,View } from 'react-native';
 
-import PhoneInput from 'react-native-phone-input';
 // import ModalPickerImage from './ModalPickerImage';
 
 export default CustomTextInput = ({ defaultVal,_onNumChange,placeHolder }) => {
