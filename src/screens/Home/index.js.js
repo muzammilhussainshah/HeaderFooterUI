@@ -1,28 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import { Dimensions, View, Text, Image, TouchableOpacity, FlatList } from 'react-native';
+import React from 'react'
+import { View } from 'react-native';
 import { connect } from 'react-redux';
 import TextInANest from '../../component/PersonalAssistance'
 import CustomFooter from '../../component/CustomFooter/index';
-const screenHeight = Dimensions.get('window').height;
-const screenWidth = Dimensions.get('window').screenWidth;
-
 
 const Home = ({ }) => {
-    const [phoneNumber, setPhoneNumber] = useState("3472076097");
-
     return (
         <View style={{ flex: 1 }}>
-            <View style={{ flex: 8.7, backgroundColor: "red" }}>
-
-
-            <TextInANest />
-            
-            
-            
+            {/* body */}
+            <View style={{ flex: 8.7, }}>
+                <TextInANest />
             </View>
-
-
-
             {/* Footer */}
             <View style={{ flex: 1.3, }}>
                 <CustomFooter />
@@ -40,3 +28,4 @@ function mapDispatchToProp(dispatch) {
     })
 }
 export default connect(mapStateToProp, mapDispatchToProp)(Home);
+

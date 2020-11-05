@@ -4,7 +4,6 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CalendarStrip from 'react-native-calendar-strip';
 import Colors from '../common/colors';
-import { Col } from "native-base";
 
 const callDatas = [
     {
@@ -209,7 +208,7 @@ const styles = StyleSheet.create({
     nameView: { flex: 1.3, flexDirection: 'row', alignItems: 'center' },
     profileIcon: { height: 27, width: 27, alignItems: 'center', justifyContent: 'center', borderRadius: 15, borderWidth: 1, borderColor: 'lightgrey' },
     userName: { fontWeight: 'bold', alignItems: 'center', marginLeft: 10 },
-    timeIcon: { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: '#e0ffff' },
+    timeIcon: { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: Colors.secondary },
     callIconView: { height: 27, marginLeft: 5, width: 27, alignItems: 'center', justifyContent: 'center', borderRadius: 15, backgroundColor: '#40e0d0' },
     detailsBtnView : { flexDirection: 'row', height: 35, width: 80, alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: '#6a5acd' },
     detailsBtnText :{ fontSize: 12, color: '#fff', fontSize: 11 },
