@@ -16,7 +16,10 @@ const CustomFooter = ({ }) => {
             <View activeOpacity={0.9} style={styles.Footer}>
                 {
                     FooterData.map((value, index) => (
-                        <TouchableOpacity onPress={() => Actions[value.rout]()} style={footerBtn(index)}>
+                        <TouchableOpacity
+                        //  onPress={() => Actions[value.rout]()} 
+                         style={footerBtn(index)}
+                        >
                             {
                                 index !== 4 ?
                                     <Image
